@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- activity_login -->
+        <dimen name="log_iv_mg">100dp</dimen>
+        <dimen name="log_iv_mh">180dp</dimen>
+
+        <dimen name="log_tv_mt">60dp</dimen>
+        <dimen name="log_tv_ts">20dp</dimen>
+
+        <dimen name="log_pb_mt">40dp</dimen>
+
+        <dimen name="log_lg_mt">20dp</dimen>
+        <dimen name="log_load_mt">80dp</dimen>
+        <dimen name="log_bn_mt">40dp</dimen>
+        <dimen name="log_bn_m">100dp</dimen>
+        <dimen name="log_tuto_ml">40dp</dimen>
+        <dimen name="log_tuto_ar">10dp</dimen>
+        <dimen name="log_ar_size">20dp</dimen>
+
+    <dimen name="log_tuto_mt">60dp</dimen>
+    <!-- /activity_login-->
+
+    <item name="log_pb_size" type="dimen" format="float">1.3</item>
+</resources>

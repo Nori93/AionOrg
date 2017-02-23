@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/log_iv_mh"
+        android:layout_marginLeft="@dimen/log_iv_mg"
+        android:layout_marginTop="@dimen/log_iv_mg"
+        android:layout_marginRight="@dimen/log_iv_mg"
+        android:scaleType="fitXY"
+        android:id="@+id/log_iv"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_iv"
+        android:id="@+id/log_sign"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/log_tv_mt"
+            android:textAlignment="center"
+            android:textColor="@color/log_text"
+            android:textSize="@dimen/log_tv_ts"
+            android:text="@string/log_pl"
+            android:id="@+id/log_pl"/>
+
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/log_pl"
+            android:layout_marginTop="@dimen/log_bn_mt"
+            android:layout_marginLeft="@dimen/log_bn_m"
+            android:layout_marginRight="@dimen/log_bn_m"
+            android:id="@+id/log_bn_li">
+        </com.google.android.gms.common.SignInButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_iv"
+        android:layout_marginTop="@dimen/log_load_mt"
+        android:id="@+id/log_load"
+        android:visibility="visible">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="@dimen/log_pb_size"
+            android:scaleY="@dimen/log_pb_size"
+            android:layout_marginTop="@dimen/log_pb_mt"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/log_pb"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/log_lg_mt"
+            android:layout_below="@id/log_pb"
+            android:textAlignment="center"
+            android:textColor="@color/log_text"
+            android:textSize="@dimen/log_tv_ts"
+            android:text="@string/log_lg"
+            android:id="@+id/log_lg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_iv"
+        android:id="@+id/log_success"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/log_tv_mt"
+            android:textAlignment="center"
+            android:textColor="@color/log_text"
+            android:textSize="@dimen/log_tv_ts"
+            android:id="@+id/log_name"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/log_name"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/log_tuto_mt"
+                android:layout_marginLeft="@dimen/log_tuto_ml"
+                android:textColor="@color/log_text"
+                android:textSize="@dimen/log_tv_ts"
+                android:text="@string/log_tuto"
+                android:id="@+id/log_tuto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/log_tuto_mt"
+                android:layout_marginRight="@dimen/log_tuto_ml"
+                android:textColor="@color/log_text"
+                android:textSize="@dimen/log_tv_ts"
+                android:text="@string/log_toapp"
+                android:id="@+id/log_toapp"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/log_name"
+            android:id="@+id/log_start">
+            <ImageView
+                android:layout_width="@dimen/log_ar_size"
+                android:layout_height="@dimen/log_ar_size"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/log_tuto_mt"
+                android:layout_marginLeft="@dimen/log_tuto_ar"
+                android:rotation="180"
+                android:background="@drawable/log_arrow"
+                android:id="@+id/log_tuto_ar"/>
+            <ImageView
+                android:layout_width="@dimen/log_ar_size"
+                android:layout_height="@dimen/log_ar_size"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/log_tuto_mt"
+                android:layout_marginRight="@dimen/log_tuto_ar"
+                android:background="@drawable/log_arrow"
+                android:id="@+id/log_toapp_ar"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AION Organizer</string>
+
+    <!-- activity_login -->
+    <string name="log_pl">Please login.</string>
+    <string name="log_lg">Loading...</string>
+    <string name="log_toapp">Start</string>
+    <string name="log_tuto">Tutorial</string>
+
+</resources>
